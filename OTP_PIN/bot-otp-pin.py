@@ -1,32 +1,49 @@
+#!/usr/bin/python -u
 import sys
 from typing import TextIO
 import os
 import time
-from flask import Flask, request
 from twilio.rest import Client
 import json
-	
+import shelve
+    
+# System call
+os.system("")
+
+# Class of different styles
+class style():
+    BLACK = '\033[30m'
+    RED = '\033[31m'
+    GREEN = '\033[32m'
+    YELLOW = '\033[33m'
+    BLUE = '\033[34m'
+    MAGENTA = '\033[35m'
+    CYAN = '\033[36m'
+    WHITE = '\033[37m'
+    UNDERLINE = '\033[4m'
+    RESET = '\033[0m'
+
 def menu():
 
         ''' Main menu to choose an item '''
 
 chosen_element = 0
 
-print("#############################################################################")
-print("########	                                                     ########")
-print("########     ░█████╗░████████╗██████╗░░░██████╗░░█████╗░████████╗    ########")
-print("########     ██╔══██╗╚══██╔══╝██╔══██╗░░██╔══██╗██╔══██╗╚══██╔══╝    ########")
-print("########     ██║░░██║░░░██║░░░██████╔╝░░██████╦╝██║░░██║░░░██║░░░    ########")
-print("########     ██║░░██║░░░██║░░░██╔═══╝░░░██╔══██╗██║░░██║░░░██║░░░    ########")
-print("########     ╚█████╔╝░░░██║░░░██║░░░░░░░██████╦╝╚█████╔╝░░░██║░░░    ########")
-print("########     ░╚════╝░░░░╚═╝░░░╚═╝░░░░░░░╚═════╝░░╚════╝░░░░╚═╝░░░    ########")
-print("########	                                                     ########")
-print("########	        1) RETRIEVE OTP + PIN       4) HELP          ########")
-print("########	        2) SETTINGS                 5) EXIT          ########")
-print("########	                                                     ########")
-print("########	                              telegram:@psych3delian ########")
-print("#############################################################################")
-chosen_element = input("Enter a number from 1 to 5: ")
+print(style.BLUE + "#############################################################################")
+print(style.BLUE + "########	                                                     ########")
+print(style.BLUE + "########     ░█████╗░████████╗██████╗░░░██████╗░░█████╗░████████╗    ########")
+print(style.BLUE + "########     ██╔══██╗╚══██╔══╝██╔══██╗░░██╔══██╗██╔══██╗╚══██╔══╝    ########")
+print(style.BLUE + "########     ██║░░██║░░░██║░░░██████╔╝░░██████╦╝██║░░██║░░░██║░░░    ########")
+print(style.BLUE + "########     ██║░░██║░░░██║░░░██╔═══╝░░░██╔══██╗██║░░██║░░░██║░░░    ########")
+print(style.BLUE + "########     ╚█████╔╝░░░██║░░░██║░░░░░░░██████╦╝╚█████╔╝░░░██║░░░    ########")
+print(style.BLUE + "########     ░╚════╝░░░░╚═╝░░░╚═╝░░░░░░░╚═════╝░░╚════╝░░░░╚═╝░░░    ########")
+print(style.BLUE + "########	                                                     ########")
+print(style.BLUE + "########	        1) RETRIEVE OTP             3) HELP          ########")
+print(style.BLUE + "########	        2) SETTINGS                 4) EXIT          ########")
+print(style.BLUE + "########	                                                     ########")
+print(style.BLUE + "########	                           telegram:@ThePsychedelian ########")
+print(style.BLUE + "#############################################################################")
+chosen_element = input("Enter a number from 1 to 4: ")
 
 if int(chosen_element) == 1:
 
