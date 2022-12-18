@@ -1,3 +1,5 @@
+**I didnt generate the requirements.txt, will add it soon. Shouldnt be hard to figure out what they are for now.***
+
 This is an OTP Bot I have made that doesnt require discord or telegram to operate, it runs entirely within terminal or 
 
 through command prompts in windows and could easily be compiled into an exe. It is fully functional but has alot of room 
